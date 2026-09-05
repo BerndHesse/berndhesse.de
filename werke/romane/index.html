@@ -1,1 +1,593 @@
-<h1>Romane</h1>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Romane | Bernd Hesse</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #f5f2ec;
+            color: #292929;
+            font-family: Georgia, "Times New Roman", serif;
+            line-height: 1.75;
+        }
+
+        header {
+            padding: 36px 8%;
+            background: #faf8f4;
+            border-bottom: 1px solid #d8d2c8;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: normal;
+            color: #b56d3c;
+        }
+
+        header p {
+            margin: 6px 0 0;
+            color: #666;
+        }
+
+        nav {
+            padding: 15px 8%;
+            background: #fff;
+            border-bottom: 1px solid #ddd7cf;
+        }
+
+        nav a {
+            margin-right: 26px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #b56d3c;
+        }
+
+        main {
+            width: min(1100px, 88%);
+            margin: 0 auto;
+            padding: 55px 0 80px;
+        }
+
+        .einleitung {
+            max-width: 850px;
+            margin-bottom: 75px;
+        }
+
+        h2 {
+            margin-top: 0;
+            font-size: 2.2rem;
+            font-weight: normal;
+        }
+
+        h3 {
+            margin-top: 55px;
+            font-size: 1.55rem;
+            font-weight: normal;
+            color: #754b32;
+        }
+
+        p {
+            margin: 0 0 22px;
+        }
+
+        .roman-titel {
+            margin: 70px 0 35px;
+            padding-top: 45px;
+            border-top: 1px solid #cfc7bc;
+        }
+
+        .roman-titel h2 {
+            margin-bottom: 7px;
+            font-size: 2.4rem;
+        }
+
+        .roman-titel p {
+            font-style: italic;
+            color: #666;
+        }
+
+        figure {
+            margin: 38px 0 55px;
+        }
+
+        figure img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        figcaption {
+            margin-top: 10px;
+            max-width: 800px;
+            font-size: 0.94rem;
+            line-height: 1.5;
+            color: #656565;
+            font-style: italic;
+        }
+
+        .cover {
+            max-width: 390px;
+        }
+
+        .katalog {
+            max-width: 850px;
+        }
+
+        .plakat {
+            max-width: 620px;
+        }
+
+        .messe-grid {
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 28px;
+            align-items: start;
+            margin: 38px 0 55px;
+        }
+
+        .messe-grid figure {
+            margin: 0;
+        }
+
+        .messe-buecher {
+            grid-column: 1 / -1;
+            max-width: 700px;
+        }
+
+        .werbung-grid {
+            display: grid;
+            grid-template-columns: 0.8fr 1.2fr;
+            gap: 34px;
+            align-items: center;
+            margin: 40px 0 55px;
+        }
+
+        .werbung-grid figure {
+            margin: 0;
+        }
+
+        .leuchttafel {
+            margin: 45px 0 65px;
+        }
+
+        .leuchttafel img {
+            width: 100%;
+        }
+
+        .presse-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            align-items: start;
+            margin: 40px 0 65px;
+        }
+
+        .presse-grid figure {
+            margin: 0;
+        }
+
+        .hoerbuch-block {
+            display: grid;
+            grid-template-columns: minmax(220px, 360px) 1fr;
+            gap: 45px;
+            align-items: start;
+            margin-top: 35px;
+        }
+
+        .hoerbuch-block figure {
+            margin: 0;
+        }
+
+        .ausklang {
+            margin-top: 55px;
+            padding: 28px 32px;
+            background: #eee8df;
+            border-left: 4px solid #b56d3c;
+        }
+
+        .zurueck {
+            margin-top: 75px;
+            padding-top: 25px;
+            border-top: 1px solid #d1cbc2;
+        }
+
+        .zurueck a {
+            color: #333;
+        }
+
+        footer {
+            padding: 28px 8%;
+            border-top: 1px solid #d8d2c8;
+            background: #faf8f4;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 760px) {
+            main {
+                width: 90%;
+            }
+
+            .messe-grid,
+            .werbung-grid,
+            .presse-grid,
+            .hoerbuch-block {
+                grid-template-columns: 1fr;
+            }
+
+            .messe-buecher {
+                grid-column: auto;
+            }
+
+            .cover {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Bernd Hesse</h1>
+    <p>Schriftsteller · Literaturwissenschaftler · Jurist</p>
+</header>
+
+<nav>
+    <a href="../../index.html">Startseite</a>
+    <a href="../index.html">Werke</a>
+    <a href="./">Romane</a>
+</nav>
+
+<main>
+
+    <section class="einleitung">
+        <h2>Romane</h2>
+
+        <h3>Vom Manuskript zum veröffentlichten Roman</h3>
+
+        <p>
+            Romane entstehen zunächst abseits der Öffentlichkeit. Am Anfang stehen
+            eine Idee, Figuren und eine Geschichte, die sich erst während des Schreibens
+            zu einem Manuskript formen. Mit der Veröffentlichung beginnt für ein Buch
+            jedoch ein zweites Leben: Es erhält ein Gesicht, begegnet seinen Leserinnen
+            und Lesern und findet seinen Weg in Buchhandlungen, auf Buchmessen, zu
+            Lesungen und in die Medien.
+        </p>
+
+        <p>
+            Die hier vorgestellten Romane von Bernd Hesse sind zu unterschiedlichen
+            Zeiten und unter unterschiedlichen Bedingungen entstanden. Die Abbildungen
+            zeigen deshalb nicht allein Buchcover. Sie dokumentieren zugleich etwas
+            von der Geschichte der Bücher: verschiedene Ausgaben und Formate,
+            Verlagswerbung und Presseberichte ebenso wie Eindrücke von der Leipziger
+            Buchmesse.
+        </p>
+
+        <p>
+            So entsteht kein vollständiges Verzeichnis im Sinne eines Katalogs,
+            sondern ein Einblick in die Wege, die ein Roman nach seiner Entstehung
+            nehmen kann – vom geschriebenen Text bis zur Begegnung mit seinem Publikum.
+        </p>
+    </section>
+
+
+    <section>
+
+        <div class="roman-titel">
+            <h2>Rubel, Rotlicht und Raketenwerfer</h2>
+            <p>Kriminalroman um den Privatdetektiv Sven Rübel</p>
+        </div>
+
+        <h3>Der lange Weg zu Sven Rübel</h3>
+
+        <p>
+            Die Beschäftigung Bernd Hesses mit dem Kriminalroman begann lange vor
+            seiner ersten größeren Romanveröffentlichung. Bereits seit Ende der
+            1990er Jahre entstanden neben anderen literarischen Arbeiten verschiedene
+            Arbeiten in diesem Genre. Dazu gehörten mehrere unveröffentlichte
+            Kriminalromane um den Kriminalkommissar Grauner, darunter
+            <em>Wenn der Fluss zufriert</em>, ebenso wie der ebenfalls
+            unveröffentlichte Roman <em>Kein Sterbenswörtchen</em>.
+            Nicht jedes Manuskript findet seinen Weg zu einem Verlag – manches bleibt
+            eine wichtige Station auf dem Weg zu späteren Büchern.
+        </p>
+
+        <p>
+            Über Jahre hinweg arbeitete Hesse immer wieder an neuen Stoffen und Formen
+            des Kriminalromans. Dabei ging es zunehmend auch um die Frage, wie sich
+            Erfahrungen und Beobachtungen aus der beruflichen Welt eines
+            Strafverteidigers literarisch nutzen lassen, ohne daraus bloße
+            Fallberichte zu machen. Der Kriminalroman eröffnete die Möglichkeit,
+            Realität und Fiktion miteinander zu verbinden und zugleich Figuren zu
+            schaffen, die ihren eigenen Gesetzen folgen.
+        </p>
+
+        <p>
+            Eine solche Figur wurde schließlich <strong>Sven Rübel</strong>.
+            Mit ihm entstand ein Privatdetektiv, der wenig mit dem souveränen Ermittler
+            des klassischen Kriminalromans gemein hat. Rübel ist unkonventionell,
+            hält sich nur mäßig an Regeln und ist auch beruflich keineswegs immer vom
+            Erfolg verwöhnt. Er gerät in Situationen, die er nicht vollständig
+            beherrscht, und seine eigenen Schwächen bleiben dem Leser nicht verborgen.
+            Gerade darin liegt jedoch ein wesentlicher Teil seines Charmes:
+            Bei allem Chaos ist Rübel eine sympathische Figur, die das Herz am
+            rechten Fleck hat.
+        </p>
+
+
+        <h3>Der erste Rübel-Roman</h3>
+
+        <p>
+            Mit Sven Rübel war schließlich die Figur gefunden, um die herum sich der
+            erste veröffentlichte Kriminalroman entwickeln konnte. Das Manuskript von
+            <em>Rubel, Rotlicht und Raketenwerfer</em> gelangte zum Gmeiner-Verlag.
+            Der Verlag entschied sich zunächst für einen vorsichtigen Weg und
+            veröffentlichte den Roman zuerst als E-Book.
+        </p>
+
+        <figure class="cover">
+            <img src="cover-e-book.jpg"
+                 alt="Cover der E-Book-Ausgabe Rubel, Rotlicht und Raketenwerfer">
+            <figcaption>
+                Das ursprüngliche Cover der zunächst als E-Book erschienenen Ausgabe
+                von <em>Rubel, Rotlicht und Raketenwerfer</em>.
+            </figcaption>
+        </figure>
+
+        <p>
+            Der Titel selbst darf dabei durchaus als programmatisch verstanden werden.
+            <em>Rubel, Rotlicht und Raketenwerfer</em> war eine Idee des Verlages,
+            der Bernd Hesse gerne zustimmte. Schon die drei Begriffe signalisieren,
+            dass sich dieser Kriminalroman bei aller Ernsthaftigkeit seines Stoffes
+            nicht ohne Augenzwinkern lesen lassen will. Dieser Ton gehört auch zu
+            Sven Rübel: Die Welt, in die er gerät, kann gefährlich und mitunter
+            düster sein – die Art, wie er sich in ihr bewegt, bewahrt jedoch immer
+            wieder Raum für Ironie und Komik.
+        </p>
+
+
+        <h3>Vom E-Book zum gedruckten Roman</h3>
+
+        <p>
+            Der zunächst eingeschlagene Weg über das E-Book erwies sich als erfolgreich.
+            Der Zuspruch zu dem Roman führte dazu, dass der Gmeiner-Verlag schließlich
+            auch einer gedruckten Ausgabe zustimmte. Damit begann für
+            <em>Rubel, Rotlicht und Raketenwerfer</em> eine zweite Phase:
+            Aus der zunächst ausschließlich digitalen Veröffentlichung wurde ein Buch,
+            das nun auch sichtbar in Buchhandlungen, im Verlagsprogramm und schließlich
+            auf einer der großen deutschen Buchmessen präsent war.
+        </p>
+
+        <figure class="cover">
+            <img src="cover-taschenbuch.jpg"
+                 alt="Taschenbuchausgabe Rubel, Rotlicht und Raketenwerfer">
+            <figcaption>
+                Die Taschenbuchausgabe von <em>Rubel, Rotlicht und Raketenwerfer</em>
+                im Gmeiner-Verlag.
+            </figcaption>
+        </figure>
+
+        <p>
+            Auch im Verlagsprogramm wurde der besondere Ton des Romans herausgestellt.
+        </p>
+
+        <figure class="katalog">
+            <img src="katalog-des-gmeiner-verlags.jpg"
+                 alt="Rubel Rotlicht und Raketenwerfer im Katalog des Gmeiner-Verlags">
+            <figcaption>
+                <em>Rubel, Rotlicht und Raketenwerfer</em> im Katalog des
+                Gmeiner-Verlags unter der Überschrift
+                „Hardboiled vom Feinsten aus dem Oderbruch!“
+            </figcaption>
+        </figure>
+
+
+        <h3>„Releaseparty mit Wodka &amp; Wasser“</h3>
+
+        <p>
+            Für die Präsentation der gedruckten Ausgabe wählte der Verlag einen Rahmen,
+            der zu Sven Rübel und zum augenzwinkernden Ton des Romans passte.
+            Auf der Leipziger Buchmesse wurde zu einer
+            <strong>„Releaseparty mit Wodka &amp; Wasser“</strong> eingeladen.
+            Eigene Plakate kündigten die Veranstaltung an. Bernd Hesse stellte dort
+            den Roman einem Messepublikum vor und las aus dem Buch.
+        </p>
+
+        <figure class="plakat">
+            <img src="plakat-releaseparty-leipziger-buchmesse.jpg"
+                 alt="Plakat zur Releaseparty auf der Leipziger Buchmesse">
+            <figcaption>
+                Ankündigung der „Releaseparty mit Wodka &amp; Wasser“
+                auf der Leipziger Buchmesse.
+            </figcaption>
+        </figure>
+
+        <p>
+            Die Buchmesse wurde damit zu einem besonderen Moment in der Geschichte
+            des Romans. Aus einem Manuskript und einer zunächst vorsichtig erprobten
+            E-Book-Veröffentlichung war ein gedrucktes Buch geworden, das nun vor
+            einem großen Messepublikum präsentiert wurde.
+        </p>
+
+        <div class="messe-grid">
+
+            <figure>
+                <img src="auf-der-leipziger-buchmesse-1.jpg"
+                     alt="Publikum auf der Leipziger Buchmesse">
+                <figcaption>
+                    Publikum bei der Präsentation von
+                    <em>Rubel, Rotlicht und Raketenwerfer</em>
+                    auf der Leipziger Buchmesse.
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="auf-der-leipziger-buchmesse-2.jpg"
+                     alt="Bernd Hesse bei einer Lesung auf der Leipziger Buchmesse">
+                <figcaption>
+                    Bernd Hesse bei der Lesung aus
+                    <em>Rubel, Rotlicht und Raketenwerfer</em>
+                    auf der Leipziger Buchmesse.
+                </figcaption>
+            </figure>
+
+            <figure class="messe-buecher">
+                <img src="auf-der-leipziger-buchmesse-3.jpg"
+                     alt="Rubel Rotlicht und Raketenwerfer am Stand des Gmeiner-Verlags">
+                <figcaption>
+                    <em>Rubel, Rotlicht und Raketenwerfer</em>
+                    am Stand des Gmeiner-Verlags auf der Leipziger Buchmesse.
+                </figcaption>
+            </figure>
+
+        </div>
+
+
+        <h3>Ein Roman wird sichtbar</h3>
+
+        <p>
+            Die Veröffentlichung wurde auch außerhalb der Buchmesse begleitet.
+            Plakate warben für den Roman, hinzu kamen Presseberichte und eine digitale
+            Großflächenanzeige in Frankfurt (Oder). Gerade diese zeitgenössischen
+            Zeugnisse gehören zur Geschichte des Buches: Sie zeigen, wie aus dem
+            zunächst nur als E-Book verfügbaren Roman eine Veröffentlichung wurde,
+            die schließlich auch im öffentlichen Raum sichtbar war.
+        </p>
+
+        <div class="werbung-grid">
+
+            <figure>
+                <img src="werbeplakat-zum-buch.jpg"
+                     alt="Werbeplakat für Rubel Rotlicht und Raketenwerfer">
+                <figcaption>
+                    Werbeplakat für <em>Rubel, Rotlicht und Raketenwerfer</em>.
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="digitale-leuchttafel.jpg"
+                     alt="Digitale Werbung für Rubel Rotlicht und Raketenwerfer in Frankfurt Oder">
+                <figcaption>
+                    Digitale Großflächenwerbung für
+                    <em>Rubel, Rotlicht und Raketenwerfer</em>
+                    in Frankfurt (Oder).
+                </figcaption>
+            </figure>
+
+        </div>
+
+
+        <h3>In der Presse</h3>
+
+        <p>
+            Auch die Presse begleitete den Weg des Buches und berichtete über den
+            Roman, seinen Autor und die Präsentation der gedruckten Ausgabe.
+        </p>
+
+        <div class="presse-grid">
+
+            <figure>
+                <img src="zeitungsartikel-zum-buch.jpg"
+                     alt="Zeitungsartikel über Bernd Hesse und Rubel Rotlicht und Raketenwerfer">
+                <figcaption>
+                    Pressebericht über Bernd Hesse und
+                    <em>Rubel, Rotlicht und Raketenwerfer</em>.
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="zeitungsartikel-zur-druckfassung des buches.jpg"
+                     alt="Zeitungsartikel zur gedruckten Ausgabe von Rubel Rotlicht und Raketenwerfer">
+                <figcaption>
+                    Zeitungsbericht zur gedruckten Ausgabe und zur Präsentation
+                    des Romans auf der Leipziger Buchmesse.
+                </figcaption>
+            </figure>
+
+        </div>
+
+
+        <h3>Vom Roman zum Hörbuch</h3>
+
+        <div class="hoerbuch-block">
+
+            <figure>
+                <img src="cover-hörbuch.jpg"
+                     alt="Hörbuch Rubel Rotlicht und Raketenwerfer gelesen von Roman Shamov">
+                <figcaption>
+                    Die Hörbuchausgabe von
+                    <em>Rubel, Rotlicht und Raketenwerfer</em>,
+                    gelesen von Roman Shamov.
+                </figcaption>
+            </figure>
+
+            <div>
+                <p>
+                    Mit der Taschenbuchausgabe und der Präsentation auf der Leipziger
+                    Buchmesse war die Geschichte von
+                    <em>Rubel, Rotlicht und Raketenwerfer</em> noch nicht beendet.
+                    Einige Jahre später erhielt Sven Rübel auch eine Stimme.
+                    Die Hörbuchmanufaktur Berlin produzierte den Roman als ungekürztes
+                    Hörbuch. Sprecher war der Schauspieler und Hörbuchsprecher
+                    <strong>Roman Shamov</strong>.
+                </p>
+
+                <p>
+                    Aus der zunächst beruflichen Zusammenarbeit zwischen Autor und
+                    Sprecher entwickelte sich im Laufe der Zeit eine persönliche
+                    Freundschaft. Damit blieb es nicht bei diesem einen gemeinsamen
+                    Projekt. Bernd Hesse und Roman Shamov standen später erneut
+                    gemeinsam vor dem Mikrofon und produzierten eine Reihe zu
+                    authentischen Kriminalfällen. Dabei trafen zwei unterschiedliche
+                    Perspektiven aufeinander: die des professionellen Sprechers und
+                    Schauspielers und die des Strafverteidigers und Autors, der aus
+                    seiner beruflichen Praxis und von realen Fällen berichten konnte.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="ausklang">
+            <p>
+                Für <em>Rubel, Rotlicht und Raketenwerfer</em> schloss sich damit
+                zugleich ein Kreis. Was mit langjährigen literarischen Arbeiten im
+                Genre des Kriminalromans begonnen hatte, führte über die Entwicklung
+                der Figur Sven Rübel und die zunächst vorsichtige Veröffentlichung
+                als E-Book zum gedruckten Roman, auf die Leipziger Buchmesse und
+                schließlich zum Hörbuch.
+            </p>
+
+            <p>
+                <strong>Sven Rübel sollte keine einmalige Erscheinung bleiben.</strong>
+                Der unkonventionelle Privatdetektiv kehrte in einem weiteren Roman
+                zurück – und damit begann das nächste Kapitel seiner Geschichte.
+            </p>
+        </div>
+
+    </section>
+
+
+    <div class="zurueck">
+        <a href="../index.html">← Zurück zu Werke</a>
+    </div>
+
+</main>
+
+<footer>
+    © Bernd Hesse
+</footer>
+
+</body>
+</html>
