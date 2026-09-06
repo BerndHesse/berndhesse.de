@@ -92,7 +92,8 @@
             font-size: 2.4rem;
         }
 
-        .roman-titel p {
+        .roman-titel p,
+        .untertitel {
             font-style: italic;
             color: #666;
         }
@@ -107,7 +108,8 @@
             height: auto;
         }
 
-        figcaption {
+        figcaption,
+        .bildtext {
             margin-top: 10px;
             max-width: 800px;
             font-size: 0.94rem;
@@ -189,6 +191,48 @@
             margin: 0;
         }
 
+        /* Bildgrößen für den zweiten Rübel-Roman */
+        .bild-einzeln {
+            max-width: 560px;
+            margin: 38px 0 55px;
+        }
+
+        .bild-einzeln img {
+            display: block;
+            max-width: 100%;
+            width: auto;
+            height: auto;
+        }
+
+        .buchcover-zwei,
+        .hoerbuch-zwei {
+            max-width: 390px;
+        }
+
+        .werbung-zwei {
+            max-width: 500px;
+        }
+
+        .bildreihe {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 30px;
+            align-items: start;
+            max-width: 850px;
+            margin: 40px 0 65px;
+        }
+
+        .bildreihe figure {
+            margin: 0;
+        }
+
+        .bildreihe img {
+            display: block;
+            max-width: 100%;
+            width: auto;
+            height: auto;
+        }
+
         .ausklang {
             margin-top: 55px;
             padding: 28px 32px;
@@ -222,7 +266,8 @@
             .messe-grid,
             .werbung-grid,
             .presse-grid,
-            .hoerbuch-block {
+            .hoerbuch-block,
+            .bildreihe {
                 grid-template-columns: 1fr;
             }
 
@@ -230,7 +275,11 @@
                 grid-column: auto;
             }
 
-            .cover {
+            .cover,
+            .bild-einzeln,
+            .buchcover-zwei,
+            .hoerbuch-zwei,
+            .werbung-zwei {
                 max-width: 100%;
             }
         }
@@ -580,180 +629,182 @@
 
     <section>
 
-    <h2>Wodka, Weiber, Wasserleiche</h2>
-    <p class="untertitel">Privatdetektiv Sven Rübels zweiter Fall</p>
+        <div class="roman-titel">
+            <h2>Wodka, Weiber, Wasserleiche</h2>
+            <p>Privatdetektiv Sven Rübels zweiter Fall</p>
+        </div>
 
-    <p>
-        Das nächste Kapitel ließ nicht lange auf sich warten. Mit
-        <em>Wodka, Weiber, Wasserleiche</em> kehrte der deutsch-polnische
-        Privatdetektiv Sven Rübel 2018 im Gmeiner-Verlag zurück.
-        Wieder führt ihn sein Weg durch das Oderbruch und den
-        deutsch-polnischen Grenzraum – und wieder ermittelt er mit
-        seinen ganz eigenen, nicht immer konventionellen Methoden.
-    </p>
-
-    <p>
-        Diesmal beginnt alles mit einer Frauenleiche, die ein Angler
-        aus der Oder fischt. Zugleich verschwindet eine Prostituierte,
-        ein scheinbar unbescholtener Bürger wird schwer misshandelt,
-        und auch privat bleibt Rübel von Verwicklungen nicht verschont.
-        Seine Freundin Eileen möchte seine Mutter kennenlernen, während
-        sein neuer Partner, der ehemalige Polizist Frank Fechner, mit
-        seiner ausgeprägten Korrektheit einen denkbaren Gegenpol zu
-        Rübels Arbeitsweise bildet.
-    </p>
-
-    <div class="bild-einzeln">
-        <img src="cover-wodka-weiber-wasserleiche.jpg"
-             alt="Cover des Romans Wodka, Weiber, Wasserleiche">
-        <p class="bildtext">
-            <em>Wodka, Weiber, Wasserleiche</em> – Privatdetektiv
-            Sven Rübels zweiter Fall, Gmeiner-Verlag 2018.
+        <p>
+            Das nächste Kapitel ließ nicht lange auf sich warten. Mit
+            <em>Wodka, Weiber, Wasserleiche</em> kehrte der deutsch-polnische
+            Privatdetektiv Sven Rübel 2018 im Gmeiner-Verlag zurück.
+            Wieder führt ihn sein Weg durch das Oderbruch und den
+            deutsch-polnischen Grenzraum – und wieder ermittelt er mit
+            seinen ganz eigenen, nicht immer konventionellen Methoden.
         </p>
-    </div>
 
-    <h3>Ein neuer Fall für Sven Rübel</h3>
+        <p>
+            Diesmal beginnt alles mit einer Frauenleiche, die ein Angler
+            aus der Oder fischt. Zugleich verschwindet eine Prostituierte,
+            ein scheinbar unbescholtener Bürger wird schwer misshandelt,
+            und auch privat bleibt Rübel von Verwicklungen nicht verschont.
+            Seine Freundin Eileen möchte seine Mutter kennenlernen, während
+            sein neuer Partner, der ehemalige Polizist Frank Fechner, mit
+            seiner ausgeprägten Korrektheit einen denkbaren Gegenpol zu
+            Rübels Arbeitsweise bildet.
+        </p>
 
-    <p>
-        Der zweite Rübel-Roman wurde vom Gmeiner-Verlag in seinem
-        Programm vorgestellt. Zugleich kündigte der Verlag die
-        zahlreichen Lesungen an, mit denen Bernd Hesse den neuen
-        Roman seinem Publikum vorstellte. So setzte sich der Weg
-        Sven Rübels nicht nur zwischen zwei Buchdeckeln, sondern
-        auch auf zahlreichen Lesebühnen fort.
-    </p>
+        <div class="bild-einzeln buchcover-zwei">
+            <img src="cover-wodka-weiber-wasserleiche.jpg"
+                 alt="Cover des Romans Wodka, Weiber, Wasserleiche">
+            <p class="bildtext">
+                <em>Wodka, Weiber, Wasserleiche</em> – Privatdetektiv
+                Sven Rübels zweiter Fall, Gmeiner-Verlag 2018.
+            </p>
+        </div>
 
-    <div class="bildreihe">
-        <figure>
-            <img src="katalog-gmeiner-verlag-zum-buch.jpg"
-                 alt="Katalog des Gmeiner-Verlags zu Wodka, Weiber, Wasserleiche">
-            <figcaption>
-                <em>Wodka, Weiber, Wasserleiche</em> im Programm
-                des Gmeiner-Verlags.
-            </figcaption>
-        </figure>
+        <h3>Ein neuer Fall für Sven Rübel</h3>
 
-        <figure>
-            <img src="katalog-gmeiner-verlag-zu-lesungen.jpg"
-                 alt="Gmeiner-Verlagskatalog mit Lesungen von Bernd Hesse">
-            <figcaption>
-                Der Gmeiner-Verlag kündigte auch die Lesungen
-                zum neuen Rübel-Roman an.
-            </figcaption>
-        </figure>
-    </div>
+        <p>
+            Der zweite Rübel-Roman wurde vom Gmeiner-Verlag in seinem
+            Programm vorgestellt. Zugleich kündigte der Verlag die
+            zahlreichen Lesungen an, mit denen Bernd Hesse den neuen
+            Roman seinem Publikum vorstellte. So setzte sich der Weg
+            Sven Rübels nicht nur zwischen zwei Buchdeckeln, sondern
+            auch auf zahlreichen Lesebühnen fort.
+        </p>
 
-    <h3>Buchpremiere in Frankfurt (Oder)</h3>
+        <div class="bildreihe">
+            <figure>
+                <img src="katalog-gmeiner-verlag-zum-buch.jpg"
+                     alt="Katalog des Gmeiner-Verlags zu Wodka, Weiber, Wasserleiche">
+                <figcaption>
+                    <em>Wodka, Weiber, Wasserleiche</em> im Programm
+                    des Gmeiner-Verlags.
+                </figcaption>
+            </figure>
 
-    <p>
-        Seine Buchpremiere erlebte <em>Wodka, Weiber, Wasserleiche</em>
-        in der Buchhandlung Ulrich von Hutten in Frankfurt (Oder).
-        Damit wurde Sven Rübels zweiter Fall dort erstmals öffentlich
-        vorgestellt, wo die Landschaft und das deutsch-polnische
-        Grenzgebiet, in denen der Roman spielt, unmittelbar vor der
-        Haustür liegen.
-    </p>
+            <figure>
+                <img src="katalog-gmeiner-verlag-zu-lesungen.jpg"
+                     alt="Gmeiner-Verlagskatalog mit Lesungen von Bernd Hesse">
+                <figcaption>
+                    Der Gmeiner-Verlag kündigte auch die Lesungen
+                    zum neuen Rübel-Roman an.
+                </figcaption>
+            </figure>
+        </div>
 
-    <div class="bild-einzeln">
-        <img src="buchpremiere-buchhandlung-ulrich-von-hutten.jpg"
-             alt="Buchpremiere in der Buchhandlung Ulrich von Hutten in Frankfurt Oder">
-        <p class="bildtext">
-            Buchpremiere von <em>Wodka, Weiber, Wasserleiche</em>
+        <h3>Buchpremiere in Frankfurt (Oder)</h3>
+
+        <p>
+            Seine Buchpremiere erlebte <em>Wodka, Weiber, Wasserleiche</em>
             in der Buchhandlung Ulrich von Hutten in Frankfurt (Oder).
+            Damit wurde Sven Rübels zweiter Fall dort erstmals öffentlich
+            vorgestellt, wo die Landschaft und das deutsch-polnische
+            Grenzgebiet, in denen der Roman spielt, unmittelbar vor der
+            Haustür liegen.
         </p>
-    </div>
 
-    <h3>Unterwegs mit Sven Rübel</h3>
+        <div class="bild-einzeln">
+            <img src="buchpremiere-buchhandlung-ulrich-von-hutten.jpg"
+                 alt="Buchpremiere in der Buchhandlung Ulrich von Hutten in Frankfurt Oder">
+            <p class="bildtext">
+                Buchpremiere von <em>Wodka, Weiber, Wasserleiche</em>
+                in der Buchhandlung Ulrich von Hutten in Frankfurt (Oder).
+            </p>
+        </div>
 
-    <p>
-        Der Buchpremiere folgten zahlreiche Lesungen an ganz
-        unterschiedlichen Orten. Zwei Stationen stehen hier
-        beispielhaft für diese Lesereise: eine Lesung in Freiberg
-        in Sachsen und eine weitere im Regionalmuseum Oberhavel
-        in Oranienburg. Bei diesen Veranstaltungen begegnete
-        Sven Rübel seinem Publikum außerhalb der Romanseiten –
-        gelesen und vorgestellt von seinem Autor.
-    </p>
+        <h3>Unterwegs mit Sven Rübel</h3>
 
-    <div class="bildreihe">
-        <figure>
-            <img src="lesung-in-freiberg.jpg"
-                 alt="Bernd Hesse bei einer Lesung in Freiberg in Sachsen">
-            <figcaption>
-                Bernd Hesse bei einer Lesung in Freiberg in Sachsen.
-            </figcaption>
-        </figure>
-
-        <figure>
-            <img src="lesung-im-museum-oberhavel.jpg"
-                 alt="Bernd Hesse bei einer Lesung im Regionalmuseum Oberhavel in Oranienburg">
-            <figcaption>
-                Lesung im Regionalmuseum Oberhavel in Oranienburg.
-            </figcaption>
-        </figure>
-    </div>
-
-    <h3>Der Roman in der Öffentlichkeit</h3>
-
-    <p>
-        Die Veröffentlichung wurde auch von Werbung und
-        Presseberichterstattung begleitet. In Frankfurt (Oder)
-        war <em>Wodka, Weiber, Wasserleiche</em> weithin sichtbar
-        auf einer digitalen Werbetafel am Oderturm präsent.
-        Auch die Presse berichtete über den neuen Roman,
-        seine Entstehung und die Lesungen.
-    </p>
-
-    <div class="bild-einzeln">
-        <img src="werbung-an-der-digitalen-werbetafel-am-oderturm.jpg"
-             alt="Werbung für Wodka, Weiber, Wasserleiche am Oderturm">
-        <p class="bildtext">
-            <em>Wodka, Weiber, Wasserleiche</em> auf der digitalen
-            Werbetafel am Oderturm in Frankfurt (Oder).
+        <p>
+            Der Buchpremiere folgten zahlreiche Lesungen an ganz
+            unterschiedlichen Orten. Zwei Stationen stehen hier
+            beispielhaft für diese Lesereise: eine Lesung in Freiberg
+            in Sachsen und eine weitere im Regionalmuseum Oberhavel
+            in Oranienburg. Bei diesen Veranstaltungen begegnete
+            Sven Rübel seinem Publikum außerhalb der Romanseiten –
+            gelesen und vorgestellt von seinem Autor.
         </p>
-    </div>
 
-    <div class="bildreihe">
-        <figure>
-            <img src="zeitungsartikel-1.jpg"
-                 alt="Zeitungsartikel zu Wodka, Weiber, Wasserleiche">
-            <figcaption>
-                Die Presse begleitete das Erscheinen des zweiten
-                Rübel-Romans.
-            </figcaption>
-        </figure>
+        <div class="bildreihe">
+            <figure>
+                <img src="lesung-in-freiberg.jpg"
+                     alt="Bernd Hesse bei einer Lesung in Freiberg in Sachsen">
+                <figcaption>
+                    Bernd Hesse bei einer Lesung in Freiberg in Sachsen.
+                </figcaption>
+            </figure>
 
-        <figure>
-            <img src="zeitungsartikel-2.jpg"
-                 alt="Pressebericht zu Bernd Hesse und seinem Roman">
-            <figcaption>
-                Ein weiterer Pressebericht zu
-                <em>Wodka, Weiber, Wasserleiche</em>.
-            </figcaption>
-        </figure>
-    </div>
+            <figure>
+                <img src="lesung-im-museum-oberhavel.jpg"
+                     alt="Bernd Hesse bei einer Lesung im Regionalmuseum Oberhavel in Oranienburg">
+                <figcaption>
+                    Lesung im Regionalmuseum Oberhavel in Oranienburg.
+                </figcaption>
+            </figure>
+        </div>
 
-    <h3>Und schließlich: Sven Rübel zum Hören</h3>
+        <h3>Der Roman in der Öffentlichkeit</h3>
 
-    <p>
-        Wie schon der erste Fall fand schließlich auch
-        <em>Wodka, Weiber, Wasserleiche</em> seinen Weg vom gedruckten
-        Buch zum Hörbuch. Roman Shamov lieh Sven Rübel und den anderen
-        Figuren seine Stimme. Mit seiner wunderbar sonoren Stimme
-        verleiht er dem zweiten Rübel-Fall und seiner Welt an der Oder
-        noch einmal einen ganz eigenen Klang.
-    </p>
-
-    <div class="bild-einzeln">
-        <img src="cover-hoerbuch.jpg"
-             alt="Hörbuch Wodka, Weiber, Wasserleiche gesprochen von Roman Shamov">
-        <p class="bildtext">
-            Das Hörbuch zu <em>Wodka, Weiber, Wasserleiche</em>,
-            gesprochen von Roman Shamov.
+        <p>
+            Die Veröffentlichung wurde auch von Werbung und
+            Presseberichterstattung begleitet. In Frankfurt (Oder)
+            war <em>Wodka, Weiber, Wasserleiche</em> weithin sichtbar
+            auf einer digitalen Werbetafel am Oderturm präsent.
+            Auch die Presse berichtete über den neuen Roman,
+            seine Entstehung und die Lesungen.
         </p>
-    </div>
 
-</section>
+        <div class="bild-einzeln werbung-zwei">
+            <img src="werbung-an-der-digitalen-werbetafel-am-oderturm.jpg"
+                 alt="Werbung für Wodka, Weiber, Wasserleiche am Oderturm">
+            <p class="bildtext">
+                <em>Wodka, Weiber, Wasserleiche</em> auf der digitalen
+                Werbetafel am Oderturm in Frankfurt (Oder).
+            </p>
+        </div>
+
+        <div class="bildreihe">
+            <figure>
+                <img src="zeitungsartikel-1.jpg"
+                     alt="Zeitungsartikel zu Wodka, Weiber, Wasserleiche">
+                <figcaption>
+                    Die Presse begleitete das Erscheinen des zweiten
+                    Rübel-Romans.
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="zeitungsartikel-2.jpg"
+                     alt="Pressebericht zu Bernd Hesse und seinem Roman">
+                <figcaption>
+                    Ein weiterer Pressebericht zu
+                    <em>Wodka, Weiber, Wasserleiche</em>.
+                </figcaption>
+            </figure>
+        </div>
+
+        <h3>Und schließlich: Sven Rübel zum Hören</h3>
+
+        <p>
+            Wie schon der erste Fall fand schließlich auch
+            <em>Wodka, Weiber, Wasserleiche</em> seinen Weg vom gedruckten
+            Buch zum Hörbuch. Roman Shamov lieh Sven Rübel und den anderen
+            Figuren seine Stimme. Mit seiner wunderbar sonoren Stimme
+            verleiht er dem zweiten Rübel-Fall und seiner Welt an der Oder
+            noch einmal einen ganz eigenen Klang.
+        </p>
+
+        <div class="bild-einzeln hoerbuch-zwei">
+            <img src="cover-hoerbuch.jpg"
+                 alt="Hörbuch Wodka, Weiber, Wasserleiche gesprochen von Roman Shamov">
+            <p class="bildtext">
+                Das Hörbuch zu <em>Wodka, Weiber, Wasserleiche</em>,
+                gesprochen von Roman Shamov.
+            </p>
+        </div>
+
+    </section>
 
 
     <div class="zurueck">
