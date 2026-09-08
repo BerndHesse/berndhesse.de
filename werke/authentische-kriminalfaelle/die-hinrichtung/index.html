@@ -59,7 +59,7 @@
         }
 
         main {
-            max-width: 980px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 55px 24px 70px;
         }
@@ -68,19 +68,18 @@
             font-size: 2.25rem;
             font-weight: normal;
             margin: 0 0 8px;
-            color: #2d2926;
         }
 
         .untertitel {
-            margin: 0 0 38px;
+            margin: 0 0 32px;
             color: #8b572a;
             font-size: 1.2rem;
             font-style: italic;
         }
 
         h3 {
-            margin-top: 44px;
-            margin-bottom: 14px;
+            margin-top: 48px;
+            margin-bottom: 16px;
             font-size: 1.55rem;
             font-weight: normal;
             color: #8b572a;
@@ -92,7 +91,7 @@
         }
 
         .bibliografie {
-            margin: 30px 0 38px;
+            margin: 28px 0 36px;
             padding: 20px 24px;
             background: rgba(255,255,255,0.55);
             border-left: 4px solid #b87333;
@@ -102,15 +101,82 @@
             margin: 4px 0;
         }
 
+        .coverbereich {
+            display: flex;
+            gap: 38px;
+            align-items: flex-start;
+            margin: 38px 0 42px;
+        }
+
+        .coverbereich img {
+            width: 280px;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+        }
+
+        .covertext {
+            flex: 1;
+        }
+
+        .bild {
+            margin: 34px 0;
+        }
+
+        .bild img {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-height: 650px;
+            object-fit: contain;
+        }
+
+        .bild figcaption,
+        .galerie figure figcaption {
+            margin-top: 8px;
+            font-size: 0.92rem;
+            color: #6c6259;
+            text-align: center;
+        }
+
+        .galerie {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+            margin: 28px 0 40px;
+            align-items: start;
+        }
+
+        .galerie.zwei {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .galerie figure {
+            margin: 0;
+        }
+
+        .galerie img {
+            display: block;
+            width: 100%;
+            height: 260px;
+            object-fit: contain;
+            background: rgba(255,255,255,0.35);
+        }
+
+        .galerie.hochkant img {
+            height: 320px;
+        }
+
         .trennlinie {
             width: 80px;
             height: 1px;
             background: #b87333;
-            margin: 44px 0;
+            margin: 48px 0;
         }
 
         .zurueck {
-            margin-top: 55px;
+            margin-top: 58px;
         }
 
         .zurueck a {
@@ -130,7 +196,7 @@
             font-size: 0.9rem;
         }
 
-        @media (max-width: 700px) {
+        @media (max-width: 760px) {
             header h1 {
                 font-size: 2rem;
             }
@@ -146,6 +212,26 @@
 
             h2 {
                 font-size: 1.85rem;
+            }
+
+            .coverbereich {
+                display: block;
+            }
+
+            .coverbereich img {
+                width: 250px;
+                margin: 0 auto 30px;
+            }
+
+            .galerie,
+            .galerie.zwei {
+                grid-template-columns: 1fr;
+            }
+
+            .galerie img,
+            .galerie.hochkant img {
+                height: auto;
+                max-height: 520px;
             }
         }
     </style>
@@ -177,21 +263,33 @@
         <p>Verlag Das Neue Berlin, Berlin 2018</p>
     </div>
 
-    <p>
-        Mit <em>Die Hinrichtung</em> begann Bernd Hesses Reihe über authentische
-        Kriminalfälle. Im Mittelpunkt stehen Verfahren, die er als Strafverteidiger
-        erlebt und begleitet hat. Dabei geht es nicht allein um die Straftat selbst.
-        Erzählt wird auch davon, was nach einer Festnahme geschieht, wie Ermittlungen
-        geführt werden, welche Bedeutung Akten, Zeugenaussagen und Sachverständige
-        gewinnen und wie sich ein Fall im Gerichtssaal mitunter ganz anders darstellt,
-        als es zu Beginn den Anschein hatte.
-    </p>
+    <div class="coverbereich">
+        <img src="cover-die-hinrichtung.jpg"
+             alt="Buchcover Die Hinrichtung von Bernd Hesse">
+
+        <div class="covertext">
+            <p>
+                Mit <em>Die Hinrichtung</em> begann Bernd Hesses Reihe über
+                authentische Kriminalfälle. Im Mittelpunkt stehen Verfahren, die er
+                als Strafverteidiger erlebt und begleitet hat. Dabei geht es nicht
+                allein um die Straftat selbst. Erzählt wird auch davon, was nach
+                einer Festnahme geschieht, wie Ermittlungen geführt werden, welche
+                Bedeutung Akten, Zeugenaussagen und Sachverständige gewinnen und wie
+                sich ein Fall im Gerichtssaal mitunter ganz anders darstellt, als es
+                zu Beginn den Anschein hatte.
+            </p>
+
+            <p>
+                Der Blick des Strafverteidigers führt unmittelbar in die Welt der
+                Untersuchungshaft, der Vernehmungen und Hauptverhandlungen.
+                Juristische Zusammenhänge werden dabei nicht abstrakt erläutert,
+                sondern entstehen aus den konkreten Geschichten und den Menschen,
+                die an ihnen beteiligt sind.
+            </p>
+        </div>
+    </div>
 
     <p>
-        Der Blick des Strafverteidigers führt unmittelbar in die Welt der
-        Untersuchungshaft, der Vernehmungen und Hauptverhandlungen. Juristische
-        Zusammenhänge werden dabei nicht abstrakt erläutert, sondern entstehen aus
-        den konkreten Geschichten und den Menschen, die an ihnen beteiligt sind.
         Ernstes und Tragisches stehen neben grotesken, absurden und bisweilen
         komischen Situationen, wie sie gerade im Gerichtsalltag immer wieder
         vorkommen.
@@ -243,32 +341,188 @@
     <h3>Das Buch in der Öffentlichkeit</h3>
 
     <p>
-        Nach dem Erscheinen wurde <em>Die Hinrichtung</em> in Zeitungen und
-        Rezensionen vorgestellt und empfohlen. Zahlreiche Lesungen führten das Buch
-        anschließend an unterschiedliche Orte – von Bibliotheken und
-        Literaturveranstaltungen bis zur Leipziger Buchmesse und zum
-        Polizeihistorischen Museum in Berlin.
+        Nach dem Erscheinen wurde <em>Die Hinrichtung</em> in Zeitungen vorgestellt,
+        besprochen und empfohlen. Neben allgemeinen Artikeln über Buch und Autor
+        erschienen auch ausführlichere Rezensionen.
     </p>
+
+    <div class="galerie hochkant">
+        <figure>
+            <img src="artikel-zu-buch-und-autor.jpg"
+                 alt="Zeitungsartikel über Die Hinrichtung und Bernd Hesse">
+            <figcaption>Artikel zu Buch und Autor</figcaption>
+        </figure>
+
+        <figure>
+            <img src="buchrezension-von-Henry-Martin-Klemt.jpg"
+                 alt="Buchrezension von Henry-Martin Klemt">
+            <figcaption>Buchrezension von Henry-Martin Klemt</figcaption>
+        </figure>
+
+        <figure>
+            <img src="buchempfehlung-einer-zeitung.jpg"
+                 alt="Buchempfehlung zu Die Hinrichtung">
+            <figcaption>Buchempfehlung in einer Zeitung</figcaption>
+        </figure>
+    </div>
+
+    <h3>Lesungen</h3>
 
     <p>
-        Eine besondere Rolle spielte auch der Rundfunk. Auf eine Lesung beim Sender
-        Pure FM folgten weitere Formen der akustischen Umsetzung. Aus dem gedruckten
-        Buch wurde damit zugleich ein Stoff für Radio und Hörproduktion.
+        Zahlreiche Lesungen führten das Buch anschließend an sehr unterschiedliche
+        Orte. Dazu gehörten Bibliotheken, Literaturveranstaltungen und die Leipziger
+        Buchmesse ebenso wie Veranstaltungen in Berlin und Brandenburg.
     </p>
 
-    <h3>Vom Buch zum Hörbuch</h3>
+    <div class="galerie hochkant">
+        <figure>
+            <img src="ankuendigung-lesung-bibliothek-ulrich-plenzdorf.jpg"
+                 alt="Ankündigung einer Lesung in der Bibliothek Ulrich Plenzdorf">
+            <figcaption>Ankündigung einer Bibliothekslesung</figcaption>
+        </figure>
+
+        <figure>
+            <img src="ankuendigung-lesung-freiberg.jpg"
+                 alt="Ankündigung einer Lesung in Freiberg">
+            <figcaption>Ankündigung einer Lesung in Freiberg</figcaption>
+        </figure>
+
+        <figure>
+            <img src="ankuendigung-lesung-theaterschiff-potsdam.jpg"
+                 alt="Ankündigung einer Lesung auf dem Theaterschiff Potsdam">
+            <figcaption>Ankündigung einer Lesung auf dem Theaterschiff Potsdam</figcaption>
+        </figure>
+    </div>
+
+    <div class="galerie">
+        <figure>
+            <img src="lesung-in-leipzig-waehrend-der-buchmesse.jpg"
+                 alt="Lesung während der Leipziger Buchmesse">
+            <figcaption>Lesung während der Leipziger Buchmesse</figcaption>
+        </figure>
+
+        <figure>
+            <img src="lesung-in-berlin.jpg"
+                 alt="Lesung in Berlin">
+            <figcaption>Lesung in Berlin</figcaption>
+        </figure>
+
+        <figure>
+            <img src="opulenter-buechertisch-mit-meinen-buechern-bei-lesung.jpg"
+                 alt="Büchertisch bei einer Lesung">
+            <figcaption>Büchertisch bei einer Lesung</figcaption>
+        </figure>
+    </div>
+
+    <h3>Lesungen in der Stadtbibliothek Frankfurt (Oder)</h3>
+
+    <div class="galerie">
+        <figure>
+            <img src="lesung-stadtbibliothek-Frankfurt-oder-01.jpg"
+                 alt="Lesung in der Stadtbibliothek Frankfurt Oder">
+        </figure>
+
+        <figure>
+            <img src="lesung-stadtbibliothek-Frankfurt-oder-02.jpg"
+                 alt="Publikum bei einer Lesung in der Stadtbibliothek Frankfurt Oder">
+        </figure>
+
+        <figure>
+            <img src="lesung-stadtbibliothek-Frankfurt-oder-03.jpg"
+                 alt="Bernd Hesse liest in der Stadtbibliothek Frankfurt Oder">
+        </figure>
+    </div>
+
+    <h3>Krimi-Marathon und Polizeihistorisches Museum Berlin</h3>
 
     <p>
-        Später entstand auch eine Hörbuchfassung. Bernd Hesse sprach sein Buch selbst
-        ein. Die Arbeit im Studio zeigte dabei eine weitere Seite der Geschichten:
-        Auch bei ernsten und teilweise bedrückenden Stoffen gibt es während einer
-        Aufnahme jene unerwarteten Momente, in denen die Beteiligten lachen müssen.
+        Auch beim Berliner Krimi-Marathon wurde aus <em>Die Hinrichtung</em>
+        gelesen. Eine der Veranstaltungen führte in das Polizeihistorische Museum
+        in Berlin.
     </p>
 
+    <div class="galerie zwei">
+        <figure>
+            <img src="lesung-beim-krimi-marathon-berlin.jpg"
+                 alt="Lesung beim Berliner Krimi-Marathon">
+            <figcaption>Beim Berliner Krimi-Marathon</figcaption>
+        </figure>
+
+        <figure>
+            <img src="lesung-im-polizeihistorischen-museum-berlin.jpg"
+                 alt="Lesung im Polizeihistorischen Museum Berlin">
+            <figcaption>Lesung im Polizeihistorischen Museum Berlin</figcaption>
+        </figure>
+    </div>
+
+    <div class="trennlinie"></div>
+
+    <h3>Vom Radio zur Hörproduktion</h3>
+
     <p>
-        So führte der Weg von <em>Die Hinrichtung</em> vom gedruckten Buch über
-        Lesungen und Rundfunk bis zum gesprochenen Wort.
+        Eine besondere Rolle spielte der Rundfunk. Zunächst las Bernd Hesse beim
+        Berliner Radiosender Pure FM aus dem Buch. Später entwickelte sich daraus
+        eine weitere akustische Umsetzung des Stoffes.
     </p>
+
+    <div class="galerie zwei hochkant">
+        <figure>
+            <img src="ankuendigung-kriminacht-radiosender-pure-fm.jpg"
+                 alt="Ankündigung einer Kriminacht beim Radiosender Pure FM">
+            <figcaption>Ankündigung der Kriminacht bei Pure FM</figcaption>
+        </figure>
+
+        <figure>
+            <img src="lesung-im-radio-bei-pure-fm.jpg"
+                 alt="Bernd Hesse bei einer Lesung im Radiosender Pure FM">
+            <figcaption>Lesung im Radio bei Pure FM</figcaption>
+        </figure>
+    </div>
+
+    <h3>Aufnahmen im Studio</h3>
+
+    <p>
+        Bei den Aufnahmen zeigte sich zugleich eine andere Seite der Arbeit mit
+        den Geschichten. Auch bei einem ernsten und teilweise bedrückenden Stoff
+        gibt es im Studio Situationen, in denen die Beteiligten miteinander lachen
+        müssen.
+    </p>
+
+    <div class="galerie zwei">
+        <figure>
+            <img src="aufnahme-des-hoerspiels-1.jpg"
+                 alt="Aufnahmen zu einer Hörproduktion von Die Hinrichtung">
+            <figcaption>Bei den Aufnahmen</figcaption>
+        </figure>
+
+        <figure>
+            <img src="aufnahme-des-hoerspiels-2.jpg"
+                 alt="Bernd Hesse bei den Aufnahmen zu Die Hinrichtung">
+            <figcaption>Auch ernste Stoffe haben während der Aufnahme ihre heiteren Momente</figcaption>
+        </figure>
+    </div>
+
+    <h3>Das Hörbuch</h3>
+
+    <p>
+        Schließlich entstand eine Hörbuchfassung von <em>Die Hinrichtung</em>.
+        Bernd Hesse sprach das Buch selbst ein. Damit führte der Weg vom gedruckten
+        Buch über Lesungen und Rundfunk bis zum gesprochenen Wort.
+    </p>
+
+    <div class="galerie zwei hochkant">
+        <figure>
+            <img src="cover-hoerbuch.jpg"
+                 alt="Cover des Hörbuchs Die Hinrichtung">
+            <figcaption>Das Hörbuch zu <em>Die Hinrichtung</em></figcaption>
+        </figure>
+
+        <figure>
+            <img src="hoerbuch-auf-spotify.jpg"
+                 alt="Die Hinrichtung als Hörbuch auf Spotify">
+            <figcaption>Das Hörbuch auf Spotify</figcaption>
+        </figure>
+    </div>
 
     <p class="zurueck">
         <a href="../index.html">← Zurück zu Authentische Kriminalfälle</a>
