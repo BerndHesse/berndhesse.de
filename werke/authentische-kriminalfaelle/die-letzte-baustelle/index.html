@@ -1,1 +1,687 @@
-x
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Die letzte Baustelle – Bernd Hesse</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: #f3eee5;
+      color: #292521;
+      line-height: 1.75;
+    }
+
+    header {
+      background: #292825;
+      color: white;
+      padding: 30px 20px 24px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #bd744c;
+      font-size: 2.2rem;
+      letter-spacing: 0.04em;
+      font-weight: normal;
+    }
+
+    header p {
+      margin: 8px 0 0;
+      color: #e8e1d6;
+      font-size: 1rem;
+      letter-spacing: 0.04em;
+    }
+
+    nav {
+      background: #faf8f3;
+      border-bottom: 1px solid #d7cec2;
+      text-align: center;
+      padding: 14px 10px;
+    }
+
+    nav a {
+      color: #37322d;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 0.98rem;
+    }
+
+    nav a:hover {
+      color: #a35f3e;
+    }
+
+    main {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 55px 28px 70px;
+    }
+
+    .page-title {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .page-title h2 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: normal;
+      color: #302b27;
+    }
+
+    .page-title .subtitle {
+      margin-top: 5px;
+      color: #8b5a3c;
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+
+    .bibliografie {
+      max-width: 680px;
+      margin: 30px auto 42px;
+      padding: 20px 28px;
+      border-left: 4px solid #b66d46;
+      background: rgba(255,255,255,0.48);
+    }
+
+    .bibliografie p {
+      margin: 3px 0;
+    }
+
+    section {
+      margin: 58px 0;
+    }
+
+    section h3 {
+      margin: 0 0 22px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #cbbcae;
+      color: #8f5438;
+      font-size: 1.65rem;
+      font-weight: normal;
+    }
+
+    p {
+      margin: 0 0 20px;
+    }
+
+    .lead {
+      font-size: 1.08rem;
+    }
+
+    figure {
+      margin: 30px 0;
+    }
+
+    figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 2px;
+    }
+
+    figcaption {
+      margin-top: 9px;
+      color: #6c625a;
+      font-size: 0.9rem;
+      text-align: center;
+      line-height: 1.45;
+    }
+
+    .banner {
+      margin: 32px 0 42px;
+    }
+
+    .banner img {
+      width: 100%;
+      max-height: 520px;
+      object-fit: contain;
+      background: #eee8de;
+    }
+
+    .two-column {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(260px, 0.85fr);
+      gap: 42px;
+      align-items: center;
+      margin: 35px 0;
+    }
+
+    .two-column figure {
+      margin: 0;
+    }
+
+    .cover img {
+      max-height: 560px;
+      object-fit: contain;
+    }
+
+    .image-pair {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: start;
+      margin: 32px 0;
+    }
+
+    .image-pair figure {
+      margin: 0;
+    }
+
+    .image-pair img {
+      width: 100%;
+      max-height: 620px;
+      object-fit: contain;
+      background: #eee8de;
+    }
+
+    .document-pair {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      align-items: start;
+      margin: 35px 0;
+    }
+
+    .document-pair figure {
+      margin: 0;
+    }
+
+    .document-pair img {
+      width: 100%;
+      max-height: 760px;
+      object-fit: contain;
+      background: #eee8de;
+    }
+
+    .single-wide img {
+      max-height: 720px;
+      object-fit: contain;
+      background: #eee8de;
+    }
+
+    .callout {
+      margin: 42px 0;
+      padding: 24px 30px;
+      background: #e8dfd3;
+      border-left: 4px solid #a76240;
+      font-size: 1.04rem;
+    }
+
+    .quote-line {
+      font-style: italic;
+      color: #65584e;
+    }
+
+    .transition {
+      text-align: center;
+      margin: 40px auto;
+      max-width: 780px;
+      font-size: 1.07rem;
+    }
+
+    .backlink {
+      margin-top: 65px;
+      padding-top: 25px;
+      border-top: 1px solid #cfc4b7;
+    }
+
+    .backlink a {
+      color: #945839;
+      text-decoration: none;
+    }
+
+    .backlink a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: #292825;
+      color: #d9d2c8;
+      padding: 28px 20px;
+      text-align: center;
+      font-size: 0.86rem;
+    }
+
+    footer a {
+      color: #d9d2c8;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    @media (max-width: 760px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 6px 8px;
+      }
+
+      main {
+        padding: 38px 18px 55px;
+      }
+
+      .page-title h2 {
+        font-size: 2rem;
+      }
+
+      .two-column,
+      .image-pair,
+      .document-pair {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .bibliografie {
+        padding: 18px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>BERND HESSE</h1>
+  <p>Schriftsteller · Literaturwissenschaftler · Jurist</p>
+</header>
+
+<nav>
+  <a href="../../../index.html">Autor</a>
+  <a href="../../../literaturwissenschaft/index.html">Literaturwissenschaft</a>
+  <a href="../../index.html">Werke</a>
+  <a href="../../../index.html#lesungen">Lesungen</a>
+  <a href="../../../index.html#kontakt">Kontakt</a>
+</nav>
+
+<main>
+
+  <div class="page-title">
+    <h2>Die letzte Baustelle</h2>
+    <div class="subtitle">Wahre Kriminalfälle</div>
+  </div>
+
+  <div class="bibliografie">
+    <p><strong>Bernd Hesse</strong></p>
+    <p><em>Die letzte Baustelle – Wahre Kriminalfälle</em></p>
+    <p>Verlag Das Neue Berlin, Berlin 2023</p>
+  </div>
+
+  <figure class="banner">
+    <img src="banner-zur-ankuendigung%20durch-verlag.jpg"
+         alt="Verlagsankündigung zu Die letzte Baustelle">
+    <figcaption>
+      Ankündigung des dritten Bandes durch den Verlag Das Neue Berlin
+    </figcaption>
+  </figure>
+
+  <section>
+    <h3>Der dritte Band der Reihe</h3>
+
+    <div class="two-column">
+
+      <div>
+        <p class="lead">
+          Mit <em>Die letzte Baustelle</em> setzte Bernd Hesse die Reihe seiner
+          authentischen Kriminalfälle im Verlag Das Neue Berlin fort.
+          Wieder stammen die Geschichten aus der unmittelbaren Erfahrung
+          anwaltlicher Praxis.
+        </p>
+
+        <p>
+          Die neun Fälle könnten unterschiedlicher kaum sein. Schwere
+          Gewalt- und Tötungsdelikte stehen neben Drogendelikten, Raub,
+          Betrug und vermeintlich kleineren Straftaten. Im Mittelpunkt
+          stehen dabei nicht allein Tat und Urteil, sondern die Menschen,
+          ihre Lebenswege und die oftmals überraschenden Entwicklungen
+          eines Strafverfahrens.
+        </p>
+
+        <p>
+          Gerade diese Spannweite prägt den dritten Band. Tragisches,
+          Abgründiges und bisweilen beinahe Groteskes stehen nebeneinander
+          und zeigen, wie wenig sich das wirkliche Leben an die Dramaturgie
+          eines klassischen Kriminalromans hält.
+        </p>
+      </div>
+
+      <figure class="cover">
+        <img src="buch-cover.jpg"
+             alt="Buchcover Die letzte Baustelle">
+        <figcaption>
+          <em>Die letzte Baustelle – Wahre Kriminalfälle</em>
+        </figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+  <section>
+    <h3>Von der letzten Baustelle bis zum Witwenmord</h3>
+
+    <p>
+      Die titelgebende Geschichte beginnt mit einem alten Rechtsgrundsatz:
+      <em>pacta sunt servanda</em> – Verträge sind einzuhalten. Aus einem
+      Streit um Bauleistungen und ausstehende Zahlungen in Millionenhöhe
+      entwickelt sich ein Mordfall. Ein Immobilienunternehmer wird in
+      Berlin erschossen; die Ermittlungen führen schließlich in das
+      Baugewerbe und zu einem Auftragsmörder.
+    </p>
+
+    <p>
+      Doch der Band bleibt nicht bei spektakulären Kapitalverbrechen.
+      In <em>Nur ein paar Gramm</em> führen Drogenermittlungen, ein
+      Polizeieinsatz und die Auswertung früherer Verfahren zu einer
+      Geschichte, in der sich die Darstellung des Mandanten und das Bild,
+      das sich aus den Akten ergibt, zunehmend voneinander entfernen.
+    </p>
+
+    <p>
+      Andere Fälle bewegen sich zwischen Tragik und unfreiwilliger Komik:
+      Ein obdachloser Mann sucht in einer Kindertagesstätte Nahrung und
+      einen warmen Schlafplatz und wird am nächsten Morgen unter einer
+      Kuscheldecke entdeckt. In <em>Neues Spiel, neues Glück!</em> wird ein
+      Täter kurz nach einem Raub mit der Scheinwaffe, dem exakt erbeuteten
+      Geld und ausgerechnet den mitgenommenen Werbekugelschreibern des
+      überfallenen Geschäfts aufgegriffen.
+    </p>
+
+    <p>
+      Der Fall <em>Witwenmord</em> führt dagegen wieder zu einem
+      Tötungsdelikt und zu aufwendigen kriminalistischen Ermittlungen mit
+      DNA-Spuren, Sonderkommission und öffentlicher Fahndung.
+    </p>
+  </section>
+
+  <section>
+    <h3>Rechtsmedizin und Strafverteidigung</h3>
+
+    <p>
+      In zwei Geschichten des Bandes begegnet der Rechtsmediziner
+      <strong>Dr. Bernd Kopetz</strong>. In <em>Nur ein paar Gramm</em>
+      findet sich in einer früheren Verfahrensakte eine von ihm untersuchte
+      Blutprobe wieder. Im Fall <em>Klaustrophobie</em> wird er unmittelbar
+      hinzugezogen, um die Haftfähigkeit eines Festgenommenen zu prüfen.
+    </p>
+
+    <p>
+      Kopetz gehörte zu den Schülern des legendären Rechtsmediziners
+      Professor Otto Prokop an der Berliner Charité. Bernd Hesse kannte
+      ihn bereits aus zahlreichen Strafverfahren als erfahrenen
+      rechtsmedizinischen Sachverständigen. Die Begegnungen zwischen
+      Strafverteidigung und Rechtsmedizin sollten für die weitere
+      Entwicklung der Buchreihe noch eine besondere Bedeutung gewinnen.
+    </p>
+  </section>
+
+  <section>
+    <h3>Positive Resonanz</h3>
+
+    <p>
+      Auch in der Presse und bei Buchrezensenten fand der dritte Band der
+      Reihe positive Resonanz. Zeitungen griffen das Buch auf und
+      empfahlen es ihren Lesern; ebenso beschäftigten sich Buchblogger mit
+      den neuen authentischen Kriminalfällen.
+    </p>
+
+    <div class="document-pair">
+
+      <figure>
+        <img src="buchtipp-potsdam-markische-allgemeine-zeitung.jpg"
+             alt="Buchtipp zu Die letzte Baustelle in der Märkischen Allgemeinen Zeitung">
+        <figcaption>
+          Buchtipp in der Märkischen Allgemeinen Zeitung
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="buchblogger.jpg"
+             alt="Buchblogger zu Die letzte Baustelle">
+        <figcaption>
+          Auch Buchblogger stellten den neuen Band vor
+        </figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+  <section>
+    <h3>Das Buch geht auf Leserreise</h3>
+
+    <p>
+      Wie schon die beiden vorausgegangenen Bände führte auch
+      <em>Die letzte Baustelle</em> zu zahlreichen Lesungen und Gesprächen
+      mit dem Publikum. Dabei ging es regelmäßig nicht nur um einzelne
+      Geschichten, sondern auch um die Arbeit des Strafverteidigers,
+      um Ermittlungen, Beweisfragen, Schuld und Strafe.
+    </p>
+
+    <figure class="single-wide">
+      <img src="lesung-in-potsdam.jpg"
+           alt="Lesung in Potsdam">
+      <figcaption>
+        Lesung in Potsdam
+      </figcaption>
+    </figure>
+
+    <div class="image-pair">
+
+      <figure>
+        <img src="ankuendigung-lesung-kunstspeicher-friedersdorf.jpg"
+             alt="Ankündigung der Lesung im Kunstspeicher Friedersdorf">
+        <figcaption>
+          Ankündigung der Lesung im Kunstspeicher Friedersdorf
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="lesung-im-kunstspeicher-friedersdorf.jpg"
+             alt="Lesung im Kunstspeicher Friedersdorf">
+        <figcaption>
+          Lesung im Kunstspeicher Friedersdorf
+        </figcaption>
+      </figure>
+
+    </div>
+
+    <p>
+      Zu den Stationen gehörte auch der Kunstspeicher Friedersdorf.
+      Ankündigung und Veranstaltung zeigen, wie sehr sich die Lesungen
+      inzwischen zu einem festen Bestandteil der öffentlichen Geschichte
+      der Buchreihe entwickelt hatten.
+    </p>
+
+    <div class="image-pair">
+
+      <figure>
+        <img src="ankuendigung-lesung-heiligengrabe.jpg"
+             alt="Ankündigung der Lesung in Heiligengrabe">
+        <figcaption>
+          Ankündigung der Lesung in Heiligengrabe
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="lesung-heiligengrabe-mit-huendin-luise.jpg"
+             alt="Lesung in Heiligengrabe mit Hündin Luise">
+        <figcaption>
+          Lesung in Heiligengrabe – mit Hündin Luise
+        </figcaption>
+      </figure>
+
+    </div>
+
+    <p>
+      In Heiligengrabe war auch Luise dabei. Die Kanzleihündin ist den
+      Leserinnen und Lesern des Buches bereits vertraut: Auch im
+      Kanzleialltag der Geschichten meldet sie zuverlässig, wenn es an
+      der Tür klingelt. So begegnet bei dieser Lesung ein Stück jener
+      Wirklichkeit wieder, aus der die Bücher entstehen.
+    </p>
+  </section>
+
+  <section>
+    <h3>Buchpremiere im Kleist Forum</h3>
+
+    <figure class="single-wide">
+      <img src="kleist-forum.jpg"
+           alt="Kleist Forum Frankfurt Oder">
+      <figcaption>
+        Das Kleist Forum in Frankfurt (Oder) – Ort der Buchpremiere
+      </figcaption>
+    </figure>
+
+    <p>
+      Die Buchpremiere von <em>Die letzte Baustelle</em> fand im
+      Kleist Forum Frankfurt (Oder) statt. Mit auf der Bühne war
+      Dr. Bernd Kopetz – jener Rechtsmediziner, der bereits in zwei
+      Geschichten des Buches eine Rolle spielt.
+    </p>
+
+    <div class="image-pair">
+
+      <figure>
+        <img src="buchpremiere-im-kleist-forum-buehne.jpg"
+             alt="Buchpremiere von Die letzte Baustelle auf der Bühne des Kleist Forums">
+        <figcaption>
+          Auf der Bühne bei der Buchpremiere im Kleist Forum
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="buchpremiere-im-kleist-forum-absprache-mit-dr-kopetz.jpg"
+             alt="Bernd Hesse und Dr. Bernd Kopetz bei der Buchpremiere">
+        <figcaption>
+          Bernd Hesse und Dr. Bernd Kopetz bei der Buchpremiere
+        </figcaption>
+      </figure>
+
+    </div>
+
+    <p>
+      Der gemeinsame Auftritt hatte eine Vorgeschichte. Schon vor der
+      Premiere hatten sich Rechtsmediziner und Strafverteidiger im
+      Zusammenhang mit der rechtsmedizinischen Praxis immer wieder über
+      Fälle und über die unterschiedlichen Perspektiven ihrer Berufe
+      ausgetauscht.
+    </p>
+
+    <div class="callout">
+      Nach der Buchpremiere saßen Bernd Hesse und Bernd Kopetz noch
+      zusammen. An diesem Abend entstand der Plan, den nächsten Band der
+      Reihe gemeinsam zu schreiben. Die Perspektive des Strafverteidigers
+      sollte um diejenige des Rechtsmediziners erweitert werden – zugleich
+      eine Möglichkeit, der Reihe nach drei Bänden eine neue Form und eine
+      neue Stimme zu geben.
+    </div>
+
+    <figure class="single-wide">
+      <img src="vor-der-buchpremiere-inbuchhandlung-ulrich-von-hutten.jpg"
+           alt="Buchhandlung Ulrich von Hutten vor der Buchpremiere">
+      <figcaption>
+        Für den Buchverkauf zur Premiere hatte sich die Buchhandlung
+        Ulrich von Hutten mit Exemplaren eingedeckt
+      </figcaption>
+    </figure>
+
+    <p>
+      Den Buchverkauf bei der Premiere übernahm – wie schon bei anderen
+      Veranstaltungen – die Buchhandlung Ulrich von Hutten, die sich für
+      den Abend mit einer stattlichen Zahl von Exemplaren eingedeckt hatte.
+    </p>
+  </section>
+
+  <section>
+    <h3>Von drei Bänden zum gemeinsamen vierten Buch</h3>
+
+    <figure class="single-wide">
+      <img src="nun-auch-lesungen-zu-drei-Teilen.jpg"
+           alt="Lesungen nun auch zu drei Teilen der Reihe">
+      <figcaption>
+        Mit <em>Die letzte Baustelle</em> war die Reihe auf drei Bände angewachsen
+      </figcaption>
+    </figure>
+
+    <p class="transition">
+      Was mit <em>Die Hinrichtung</em> begonnen und mit
+      <em>Durch die Hölle</em> fortgesetzt worden war, hatte sich mit
+      <em>Die letzte Baustelle</em> zu einer dreibändigen Reihe entwickelt.
+      Zugleich wurde bei der Buchpremiere bereits der Grundstein für ihre
+      Fortsetzung gelegt.
+    </p>
+
+    <p>
+      Aus der damals vereinbarten Zusammenarbeit von Rechtsanwalt und
+      Rechtsmediziner entstand der vierte Band:
+      <strong><em>Tod im Rapsfeld</em></strong>. Damit wurde aus der
+      gelegentlichen Begegnung von Bernd Hesse und Bernd Kopetz in den
+      Fällen von <em>Die letzte Baustelle</em> eine gemeinsame
+      Autorenschaft.
+    </p>
+  </section>
+
+  <section>
+    <h3>Vom Buch zum Hörbuch</h3>
+
+    <p>
+      Eine weitere Gestalt erhielt <em>Die letzte Baustelle</em> schließlich
+      als Hörbuch. Bernd Hesse sprach die Geschichten selbst ein und brachte
+      damit jene Fälle, die aus der anwaltlichen Praxis hervorgegangen
+      waren, noch einmal in einer anderen Form zu ihrem Publikum.
+    </p>
+
+    <div class="image-pair">
+
+      <figure>
+        <img src="hoerbuch-cover.jpg"
+             alt="Hörbuchcover Die letzte Baustelle">
+        <figcaption>
+          Das Hörbuch zu <em>Die letzte Baustelle</em>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="beim-einsprechen-des-hoerbuches.jpg"
+             alt="Bernd Hesse beim Einsprechen des Hörbuches">
+        <figcaption>
+          Bernd Hesse beim Einsprechen des Hörbuches
+        </figcaption>
+      </figure>
+
+    </div>
+
+    <div class="callout">
+      <em>Die letzte Baustelle</em> steht damit zugleich für einen
+      Abschluss und einen Übergang: Der dritte Band führte die bisherige
+      Reihe weiter – und aus seiner Buchpremiere erwuchs bereits die Idee
+      für das nächste gemeinsame Projekt.
+    </div>
+  </section>
+
+  <div class="backlink">
+    <a href="../index.html">← Zurück zu „Authentische Kriminalfälle“</a>
+  </div>
+
+</main>
+
+<footer>
+  <div>© Bernd Hesse</div>
+  <div>
+    <a href="../../../impressum.html">Impressum</a>
+    ·
+    <a href="../../../datenschutz.html">Datenschutz</a>
+  </div>
+</footer>
+
+</body>
+</html>
