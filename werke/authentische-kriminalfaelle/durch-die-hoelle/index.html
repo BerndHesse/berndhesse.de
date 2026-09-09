@@ -1,1 +1,657 @@
-x
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Durch die Hölle – Bernd Hesse</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Georgia, "Times New Roman", serif;
+            background: #f5f0e7;
+            color: #2d2926;
+            line-height: 1.72;
+        }
+
+        header {
+            background: #292724;
+            color: white;
+            text-align: center;
+            padding: 38px 20px 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #c87946;
+            font-size: 2.5rem;
+            letter-spacing: 0.08em;
+            font-weight: normal;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1rem;
+            letter-spacing: 0.05em;
+            color: #e6e0d8;
+        }
+
+        nav {
+            background: #ffffff;
+            border-bottom: 1px solid #d8d1c7;
+            text-align: center;
+            padding: 15px 10px;
+        }
+
+        nav a {
+            display: inline-block;
+            margin: 5px 15px;
+            color: #35312d;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            color: #b86636;
+        }
+
+        main {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 55px 25px 70px;
+        }
+
+        h2 {
+            font-size: 2.35rem;
+            font-weight: normal;
+            margin: 0 0 5px;
+            color: #292724;
+        }
+
+        .untertitel {
+            margin-top: 0;
+            margin-bottom: 35px;
+            color: #9a5b37;
+            font-size: 1.2rem;
+        }
+
+        h3 {
+            margin-top: 55px;
+            margin-bottom: 18px;
+            font-size: 1.65rem;
+            font-weight: normal;
+            color: #8f5433;
+        }
+
+        p {
+            margin: 0 0 22px;
+            font-size: 1.08rem;
+        }
+
+        .bibliografie {
+            margin: 30px 0 40px;
+            padding: 22px 26px;
+            background: #ebe2d4;
+            border-left: 4px solid #b96b3e;
+        }
+
+        .bibliografie p {
+            margin: 3px 0;
+        }
+
+        figure {
+            margin: 30px 0;
+        }
+
+        figure img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 2px;
+        }
+
+        figcaption {
+            margin-top: 10px;
+            font-size: 0.92rem;
+            line-height: 1.45;
+            color: #6f6860;
+            text-align: center;
+        }
+
+        .bildpaar {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 24px;
+            margin: 32px 0 42px;
+            align-items: start;
+        }
+
+        .bildpaar figure {
+            margin: 0;
+        }
+
+        .dreiergruppe {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px;
+            margin: 32px 0 42px;
+            align-items: start;
+        }
+
+        .dreiergruppe figure {
+            margin: 0;
+        }
+
+        .einzelbild {
+            max-width: 700px;
+            margin: 35px auto 45px;
+        }
+
+        .katalog {
+            margin-top: 30px;
+        }
+
+        .schluss {
+            margin-top: 40px;
+            padding: 26px 28px;
+            background: #eee6da;
+            border-top: 1px solid #d6c8b7;
+            border-bottom: 1px solid #d6c8b7;
+            font-size: 1.1rem;
+        }
+
+        .zurueck {
+            margin-top: 55px;
+        }
+
+        .zurueck a {
+            color: #9b5834;
+            text-decoration: none;
+        }
+
+        .zurueck a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #292724;
+            color: #ddd6ce;
+            text-align: center;
+            padding: 28px 20px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 760px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            main {
+                padding: 40px 20px 55px;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .bildpaar,
+            .dreiergruppe {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            nav a {
+                margin: 5px 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>BERND HESSE</h1>
+    <p>Schriftsteller · Literaturwissenschaftler · Jurist</p>
+</header>
+
+<nav>
+    <a href="../../../index.html">Autor</a>
+    <a href="../../../literaturwissenschaft/index.html">Literaturwissenschaft</a>
+    <a href="../../index.html">Werke</a>
+    <a href="../../../index.html#lesungen">Lesungen</a>
+    <a href="../../../index.html#kontakt">Kontakt</a>
+</nav>
+
+<main>
+
+    <h2>Durch die Hölle</h2>
+    <p class="untertitel">Wahre Kriminalfälle</p>
+
+    <div class="bibliografie">
+        <p><strong>Bernd Hesse</strong></p>
+        <p><em>Durch die Hölle – Wahre Kriminalfälle</em></p>
+        <p>Verlag Das Neue Berlin, Berlin 2019</p>
+    </div>
+
+    <p>
+        Mit <em>Durch die Hölle – Wahre Kriminalfälle</em> setzte Bernd Hesse
+        die mit <em>Die Hinrichtung</em> begonnene Reihe authentischer
+        Kriminalfälle im Verlag Das Neue Berlin fort. Wieder stammen die
+        Geschichten aus der unmittelbaren Nähe strafrechtlicher Praxis.
+        Doch geht es nicht allein um Tat, Ermittlung und Urteil.
+    </p>
+
+    <p>
+        Hesse folgt den Lebenswegen der Beteiligten und fragt danach,
+        wie Menschen in Situationen geraten, an deren Ende eine Strafakte
+        steht. Das Buch führt dabei vom scheinbar geordneten Alltag
+        „ganz normaler Bürger“ bis in die Welt organisierter Kriminalität
+        und des Rotlichtmilieus.
+    </p>
+
+
+    <div class="bildpaar katalog">
+
+        <figure>
+            <img src="verlagskatalog-01.jpg"
+                 alt="Durch die Hölle im Verlagskatalog">
+            <figcaption>
+                Ankündigung von <em>Durch die Hölle</em> im Verlagskatalog.
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="verlagskatalog-02.jpg"
+                 alt="Durch die Hölle im Verlagskatalog">
+            <figcaption>
+                Vorstellung des Buches im Programm des Verlages Das Neue Berlin.
+            </figcaption>
+        </figure>
+
+    </div>
+
+
+    <p>
+        Der Band versammelt drei große Geschichten:
+        <strong>„Sieben Leben“</strong>,
+        <strong>„Der Jurastudent, der seine Eltern zerstückelte“</strong>
+        und die titelgebende Geschichte
+        <strong>„Durch die Hölle“</strong>.
+    </p>
+
+
+    <h3>Sieben Leben</h3>
+
+    <p>
+        Schon die erste Geschichte zeigt, dass ein tatsächlicher Kriminalfall
+        sehr viel komplizierter sein kann als die knappe Bezeichnung einer Tat.
+        Eine ältere Frau wird von einem Verwandten angegriffen. Der Täter glaubt
+        zeitweilig, sie bereits getötet zu haben, versucht die vermeintliche
+        Leiche zu beseitigen – und gerade die weiteren Handlungen führen
+        schließlich zum Tod.
+    </p>
+
+    <p>
+        Für den Strafverteidiger stellt sich damit eine ungewöhnliche Frage:
+        Wie sind mehrere aufeinanderfolgende Handlungen strafrechtlich zu
+        beurteilen, wenn sich die Vorstellung des Täters über Leben und Tod
+        seines Opfers während des Geschehens verändert?
+    </p>
+
+    <p>
+        Gerade solche Fälle zeigen den besonderen Blickwinkel des Buches:
+        Nicht die spektakuläre Tat allein interessiert, sondern das, was
+        anschließend im Strafverfahren aus ihr wird – Geständnis,
+        Beweisaufnahme, Verteidigungsstrategie und die juristische Bewertung
+        eines Geschehens, das sich nicht ohne Weiteres in ein einfaches Schema
+        pressen lässt.
+    </p>
+
+
+    <div class="bildpaar">
+
+        <figure>
+            <img src="buchpremiere-ulrich-von-hutten-buchhandlung-foto-ricarda-heidemann-01.jpg"
+                 alt="Buchpremiere von Durch die Hölle in der Buchhandlung Ulrich von Hutten">
+            <figcaption>
+                Buchpremiere in der Buchhandlung Ulrich von Hutten
+                in Frankfurt (Oder). Foto: Ricarda Heidemann.
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="buchpremiere-ulrich-von-hutten-buchhandlung-foto-ricarda-heidemann-02.jpg"
+                 alt="Bernd Hesse bei der Buchpremiere von Durch die Hölle">
+            <figcaption>
+                Bei der Buchpremiere von <em>Durch die Hölle</em>.
+                Foto: Ricarda Heidemann.
+            </figcaption>
+        </figure>
+
+    </div>
+
+
+    <p>
+        Die Buchpremiere fand in der Buchhandlung Ulrich von Hutten
+        in Frankfurt (Oder) statt. Sie bildete den Auftakt zu zahlreichen
+        Veranstaltungen, bei denen Bernd Hesse aus dem Band las und zugleich
+        über die Hintergründe der Fälle und die Arbeit eines Strafverteidigers
+        berichtete.
+    </p>
+
+
+    <figure class="einzelbild">
+        <img src="zeitungsartikel-zum-buch.jpg"
+             alt="Zeitungsartikel Schicksale zwischen Aktendeckeln über Bernd Hesse und Durch die Hölle">
+        <figcaption>
+            „Schicksale zwischen Aktendeckeln“ – Pressebericht über
+            Bernd Hesse und <em>Durch die Hölle</em>.
+        </figcaption>
+    </figure>
+
+
+    <p>
+        Auch die Presse nahm das Erscheinen zum Anlass, nicht nur das Buch,
+        sondern den Strafverteidiger und Schriftsteller an seinem Arbeitsplatz
+        vorzustellen. Der Titel <strong>„Schicksale zwischen Aktendeckeln“</strong>
+        trifft dabei einen wesentlichen Gedanken dieser Bücher:
+        Hinter den Akten stehen Menschen und Lebensgeschichten.
+    </p>
+
+
+    <h3>Der Jurastudent, der seine Eltern zerstückelte</h3>
+
+    <p>
+        Die zweite große Geschichte führt besonders tief in eine familiäre
+        Tragödie. Ein hochintelligenter Jurastudent tötet seine Eltern und
+        zerstückelt anschließend deren Leichen. Hinter der zunächst kaum
+        fassbaren Tat wird im Prozess eine Familie sichtbar, die über Jahre
+        immer stärker in Isolation geraten war.
+    </p>
+
+    <p>
+        Der psychiatrische Sachverständige beschreibt eine geradezu
+        festungsartige Abschottung gegenüber einer als feindlich empfundenen
+        Außenwelt. Gefühle werden kaum gezeigt, Kommunikation und soziale
+        Kontakte verkümmern. Nachbarn schildern später ein Familienleben,
+        das wie ein Leben in einem Gefängnis gewirkt habe.
+    </p>
+
+    <p>
+        Damit erzählt das Kapitel nicht nur von einem Doppelmord.
+        Es fragt danach, welche Vorgeschichte einer solchen Tat vorausgeht
+        und was ein Strafprozess über familiäre Strukturen sichtbar machen
+        kann, die Außenstehenden zuvor weitgehend verborgen geblieben waren.
+    </p>
+
+
+    <div class="bildpaar">
+
+        <figure>
+            <img src="buchempfehlung-von-henry-martin-klemt-01.jpg"
+                 alt="Buchempfehlung von Henry-Martin Klemt zu Durch die Hölle">
+            <figcaption>
+                Buchempfehlung des Schriftstellers Henry-Martin Klemt.
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="buchempfehlung-von-henry-martin-klemt-02.jpg"
+                 alt="Buchempfehlung von Henry-Martin Klemt zu Durch die Hölle">
+            <figcaption>
+                Henry-Martin Klemts Empfehlung von
+                <em>Durch die Hölle</em>.
+            </figcaption>
+        </figure>
+
+    </div>
+
+
+    <p>
+        Das Buch fand auch außerhalb klassischer Rezensionen Beachtung.
+        Der Schriftsteller <strong>Henry-Martin Klemt</strong> empfahl den Band.
+        Gerade solche Reaktionen lenkten den Blick darauf, dass diese Texte
+        zwar aus der Welt des Strafrechts stammen, zugleich aber Geschichten
+        über Menschen in extremen Lebenssituationen erzählen.
+    </p>
+
+
+    <h3>„Durch die Hölle“ – die titelgebende Geschichte</h3>
+
+    <p>
+        Den größten Raum nimmt schließlich die Geschichte ein, die dem
+        gesamten Buch seinen Titel gibt. Sie beginnt bemerkenswerterweise
+        im alltäglichen Kanzleibetrieb: mit einem Gerichtsbeschluss über
+        die Bestellung Bernd Hesses zum Zeugenbeistand. Aus diesem zunächst
+        unspektakulären anwaltlichen Auftrag entwickelt sich der Blick
+        in eine ganz andere Welt.
+    </p>
+
+    <p>
+        Im Mittelpunkt steht die junge Nancy. Ihr Weg führt immer tiefer
+        in das Rotlichtmilieu und schließlich in die Abhängigkeit von Menschen,
+        die ihre Verletzlichkeit ausnutzen. Was zunächst wie das Versprechen
+        von Freiheit, Liebe und Selbstbestimmung erscheint, wird zur Falle.
+    </p>
+
+    <p>
+        Die Geschichte führt weiter zu Zuhälterei, Freiheitsberaubung und
+        Ermittlungen gegen Personen aus dem Umfeld organisierter Kriminalität.
+        Später werden Erkenntnisse des Falles auch für weitergehende
+        Ermittlungen des Landeskriminalamtes Berlin genutzt.
+    </p>
+
+    <p>
+        Gerade hier erklärt sich der Titel <em>Durch die Hölle</em>:
+        Das Strafverfahren bildet nur einen Ausschnitt einer viel längeren
+        Geschichte von Abhängigkeit, Gewalt und dem Versuch, das eigene Leben
+        wieder in die Hand zu bekommen.
+    </p>
+
+
+    <h3>Im Fernsehen</h3>
+
+    <p>
+        Eine besondere Resonanz erfuhr das Buch im Fernsehen.
+        In der rbb-Sendung <strong>„Täter – Opfer – Polizei“</strong>
+        wurde nicht allein <em>Durch die Hölle</em> vorgestellt.
+        Bernd Hesse berichtete zugleich als Strafverteidiger über seine Arbeit
+        und über die tatsächlichen Fälle hinter seinen Büchern.
+    </p>
+
+
+    <div class="dreiergruppe">
+
+        <figure>
+            <img src="im-TV-bei-taeter-opfer-polizei-01.jpg"
+                 alt="Bernd Hesse bei Täter Opfer Polizei">
+            <figcaption>
+                Bernd Hesse in „Täter – Opfer – Polizei“.
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="im-TV-bei-taeter-opfer-polizei-02.jpg"
+                 alt="Bernd Hesse bei Täter Opfer Polizei">
+            <figcaption>
+                Im Gespräch über authentische Kriminalfälle.
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="im-TV-bei-taeter-opfer-polizei-03.jpg"
+                 alt="Durch die Hölle bei Täter Opfer Polizei">
+            <figcaption>
+                <em>Durch die Hölle</em> bei „Täter – Opfer – Polizei“.
+            </figcaption>
+        </figure>
+
+    </div>
+
+
+    <p>
+        Auch bei <strong>„zuhause in berlin &amp; brandenburg“</strong>
+        wurde das Buch einem größeren Fernsehpublikum präsentiert.
+        Damit rückte immer stärker jene Verbindung in den Mittelpunkt,
+        die die Reihe prägt: die unmittelbare Erfahrung aus der
+        Strafverteidigung und ihre literarische Verarbeitung.
+    </p>
+
+
+    <div class="bildpaar">
+
+        <figure>
+            <img src="im-TV-bei-zuhause-in-berlin-und-brandenburg-01.jpg"
+                 alt="Bernd Hesse bei zuhause in Berlin und Brandenburg">
+            <figcaption>
+                Bernd Hesse bei „zuhause in berlin &amp; brandenburg“.
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="im-TV-bei-zuhause-in-berlin-und-brandenburg-02.jpg"
+                 alt="Bernd Hesse mit Durch die Hölle bei zuhause in Berlin und Brandenburg">
+            <figcaption>
+                Vorstellung von <em>Durch die Hölle</em> im Fernsehen.
+            </figcaption>
+        </figure>
+
+    </div>
+
+
+    <h3>Ein Buch auf Reisen</h3>
+
+    <p>
+        Vor allem aber wurde <em>Durch die Hölle</em> zu einem Buch der
+        Begegnung mit den Leserinnen und Lesern. Bernd Hesse stellte es bei
+        <strong>Dutzenden Lesungen</strong> in Buchhandlungen, Bibliotheken
+        und anderen Kultureinrichtungen vor.
+    </p>
+
+    <p>
+        Viele davon waren Häuser, in denen er regelmäßig zu Gast ist –
+        darunter die Stadt- und Regionalbibliothek Frankfurt (Oder),
+        die Ulrich-Plenzdorf-Bibliothek in Seelow sowie Berliner Bibliotheken.
+        Die hier gezeigten Bilder können deshalb nur einige Beispiele aus
+        der großen Zahl der Veranstaltungen dokumentieren.
+    </p>
+
+
+    <div class="bildpaar">
+
+        <figure>
+            <img src="beim-zehnten-krimi-marathon-in-berlin-01.jpg"
+                 alt="Bernd Hesse beim zehnten Krimi-Marathon in Berlin">
+            <figcaption>
+                Beim 10. Krimi-Marathon in Berlin.
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="beim-zehnten-krimi-marathon-in-berlin-02.jpg"
+                 alt="Lesung von Bernd Hesse beim zehnten Krimi-Marathon in Berlin">
+            <figcaption>
+                Lesung aus <em>Durch die Hölle</em>
+                beim 10. Krimi-Marathon in Berlin.
+            </figcaption>
+        </figure>
+
+    </div>
+
+
+    <p>
+        Eine der zahlreichen Stationen war der
+        <strong>10. Krimi-Marathon in Berlin</strong>.
+        Auch dort verband die Lesung Passagen aus dem Buch mit Einblicken
+        in die Hintergründe der tatsächlichen Strafverfahren.
+    </p>
+
+
+    <div class="bildpaar">
+
+        <figure>
+            <img src="signierstunde-leipziger-buchmesse-01.jpg"
+                 alt="Bernd Hesse bei einer Signierstunde auf der Leipziger Buchmesse">
+            <figcaption>
+                Signierstunde auf der Leipziger Buchmesse.
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="signierstunde-leipziger-buchmesse-02.jpg"
+                 alt="Bernd Hesse auf der Leipziger Buchmesse">
+            <figcaption>
+                Begegnungen mit Leserinnen und Lesern
+                auf der Leipziger Buchmesse.
+            </figcaption>
+        </figure>
+
+    </div>
+
+
+    <p>
+        Auf der <strong>Leipziger Buchmesse</strong> begegnete Bernd Hesse
+        seinen Leserinnen und Lesern bei Signierstunden und Gesprächen über
+        das Buch.
+    </p>
+
+
+    <div class="bildpaar">
+
+        <figure>
+            <img src="lesung-seecampus-niederlausitz-01.jpg"
+                 alt="Lesung von Bernd Hesse im SeeCampus Niederlausitz">
+            <figcaption>
+                Lesung im SeeCampus Niederlausitz.
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="lesung-seecampus-niederlausitz-02.jpg"
+                 alt="Bernd Hesse bei einer Lesung im SeeCampus Niederlausitz">
+            <figcaption>
+                Bernd Hesse bei der Lesung im SeeCampus Niederlausitz.
+            </figcaption>
+        </figure>
+
+    </div>
+
+
+    <p>
+        Auch die Lesung im <strong>SeeCampus Niederlausitz</strong>
+        steht exemplarisch für die zahlreichen Veranstaltungen.
+        Bei diesen Abenden ging es regelmäßig um mehr als das Vorlesen
+        einzelner Passagen: Die tatsächlichen Fälle eröffneten Gespräche
+        über Schuld und Strafe, Täter und Opfer, die Tätigkeit des
+        Strafverteidigers und darüber, was sich hinter der oft nüchternen
+        Sprache einer Gerichtsakte verbirgt.
+    </p>
+
+
+    <p class="schluss">
+        <em>Durch die Hölle</em> wurde damit nicht nur die Fortsetzung
+        der Reihe authentischer Kriminalfälle. Das Buch führte Bernd Hesse
+        zu zahlreichen Lesungen, Gesprächen und Fernsehauftritten und brachte
+        einem breiten Publikum jene Geschichten nahe, die gewöhnlich hinter
+        den Türen von Kanzleien und Gerichtssälen verborgen bleiben.
+    </p>
+
+
+    <p class="zurueck">
+        <a href="../index.html">← Zurück zu „Authentische Kriminalfälle“</a>
+    </p>
+
+</main>
+
+
+<footer>
+    © Bernd Hesse
+</footer>
+
+</body>
+</html>
